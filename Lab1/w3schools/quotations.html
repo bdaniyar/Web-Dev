@@ -1,30 +1,71 @@
-<!-- Which of the following is NOT a quotation element (in fact, not an HTML element at all)? -->
-<quote></quote>
+<!doctype html>
+<html lang="en">
 
-<!-- Use an HTML element to add quotation marks around the letters "cool". -->
-<p>
-<q>I am so cool.</q>
-</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - Quotations</title>
 
-<!-- The text below should be a quoted section.
-Add the proper HTML element to it, and specify that it is quoted from the following URL:
-http://www.worldwildlife.org/who/index.html -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 24px;
+            background: #f8fafc;
+        }
 
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-For 50 years, WWF has been protecting the future of nature.
-The world's leading conservation organization,
-WWF works in 100 countries and is supported by
-1.2 million members in the United States and
-close to 5 million globally.
-</blockquote>
+        section {
+            margin: 0 0 16px;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
 
-<!-- Change text direction.
-Make the text below go right-to-left. -->
-<bdo dir="rtl">What a beautiful day!</bdo>
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
 
-<!-- The letters "WHO" in the text below is an abbreviation of "World Health Organization".
-Use an HTML element to provide the specified abbreviation of "WHO". -->
-<p>
-The <abbr title = "World Health Organization">
-WHO</abbr> was founded in 1948.
-</p>
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1) Not a real HTML quote element</h2>
+        <p><code>&lt;quote&gt;&lt;/quote&gt;</code> is not a standard HTML element.</p>
+    </section>
+
+    <section>
+        <h2>2) Inline quote with &lt;q&gt;</h2>
+        <p><q>I am so cool.</q></p>
+    </section>
+
+    <section>
+        <h2>3) Block quote with cite</h2>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+            organization, WWF works in 100 countries and is supported by 1.2 million members in the
+            United States and close to 5 million globally.
+        </blockquote>
+    </section>
+
+    <section>
+        <h2>4) Bidirectional override (right-to-left)</h2>
+        <p><bdo dir="rtl">What a beautiful day!</bdo></p>
+    </section>
+
+    <section>
+        <h2>5) Abbreviation with title</h2>
+        <p>
+            The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+        </p>
+    </section>
+</body>
+
+</html>

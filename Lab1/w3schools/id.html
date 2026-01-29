@@ -1,28 +1,54 @@
-<!-- Add the correct HTML attribute to make the H1 element red. -->
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-#myheader {color:red;}
-</style>
-</head>
-<body>
-<h1 id="myheader">My Home Page</h1>
-</body>
-</html>
+<!doctype html>
+<html lang="en">
 
-<!-- Create an id selector named "special".
-Add a color property with the value "blue" inside the "special" declaration block. -->
-<!DOCTYPE html>
-<html>
 <head>
-<style>
-#special{
-    color:blue;
-}
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - Id</title>
+
+    <style>
+        /* Exercise 1: Make the H1 element red. */
+        #myheader {
+            color: red;
+        }
+
+        /* Exercise 2: Create an id selector named "special" (blue). */
+        #special {
+            color: blue;
+        }
+
+        /* Optional readability */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 24px;
+        }
+
+        section {
+            margin: 0 0 16px;
+            padding: 16px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
+
 <body>
-<p id="special">My paragraph</p>
+    <section>
+        <h2>Exercise 1: #myheader (red)</h2>
+        <h1 id="myheader">My Home Page</h1>
+    </section>
+
+    <section>
+        <h2>Exercise 2: #special (blue)</h2>
+        <p id="special">My paragraph</p>
+    </section>
 </body>
+
 </html>

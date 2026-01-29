@@ -1,58 +1,87 @@
-<!-- What is a correct syntax for linking to an external stylesheet?
-<link rel='stylesheet' href='styles.css'>
-{ fillintheblanks: "exercise_html_colors1.htm" },
-Use CSS to set the background color of the document (body) to yellow. -->
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body{
-    background-color: yellow;
-}
-</style>
-</head>
-<body>
-<h1>My Home Page</h1>
-</body>
-</html>
+<!doctype html>
+<html lang="en">
 
-<!-- Use CSS to set the font of the document to "courier". -->
-<!DOCTYPE html>
-<html>
 <head>
-<style>
-body {font-family:courier;}
-</style>
-</head>
-<body>
-<h1>My Home Page</h1>
-</body>
-</html>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - CSS (Exercises)</title>
 
-<!-- Use CSS to set the text color of the document to red. -->
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {color:red;}
-</style>
-</head>
-<body>
-<h1>My Home Page</h1>
-</body>
-</html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 24px;
+            background: #f8fafc;
+        }
 
-<!-- Use CSS to make a yellow, 1 pixel thick, border around all paragraphs. -->
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-p {border: 1px solid yellow;}
-</style>
+        section {
+            margin: 0 0 16px;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
+
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+
+        .demo-yellow {
+            background-color: yellow;
+        }
+
+        .demo-courier {
+            font-family: Courier, "Courier New", monospace;
+        }
+
+        .demo-red {
+            color: red;
+        }
+
+        .demo-border p {
+            border: 1px solid yellow;
+            padding: 6px;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+    </style>
 </head>
+
 <body>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
+    <section>
+        <h2>Linking external CSS</h2>
+        <p>Correct syntax:</p>
+        <p><code>&lt;link rel="stylesheet" href="styles.css" /&gt;</code></p>
+    </section>
+
+    <section class="demo-yellow">
+        <h2>Exercise: Body background color = yellow</h2>
+        <p>This section simulates a yellow background.</p>
+    </section>
+
+    <section class="demo-courier">
+        <h2>Exercise: Font family = Courier</h2>
+        <h1>My Home Page</h1>
+        <p>Courier font example.</p>
+    </section>
+
+    <section class="demo-red">
+        <h2>Exercise: Text color = red</h2>
+        <h1>My Home Page</h1>
+        <p>Red text example.</p>
+    </section>
+
+    <section class="demo-border">
+        <h2>Exercise: Yellow 1px border around all paragraphs</h2>
+        <p>This is a paragraph.</p>
+        <p>This is a paragraph.</p>
+        <p>This is a paragraph.</p>
+    </section>
 </body>
+
 </html>

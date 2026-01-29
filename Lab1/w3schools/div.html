@@ -1,56 +1,132 @@
-<!--The <div> element is often used to group sections of a web page together.-->
-    <div>
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-        <p>London has over 9 million inhabitants.</p>
-      </div>
+<!doctype html>
+<html lang="en">
 
-<!--If you have a <div> element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.-->
-    <style>
-        div {
-          width:300px;
-          margin:auto;
-        }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>W3Schools - Div</title>
 
-<!--How to use grid to align <div> elements side by side:-->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+      background: #f8fafc;
+    }
 
-    <style>
+    section {
+      margin: 0 0 16px;
+      padding: 16px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .box {
+      padding: 12px;
+      border-radius: 10px;
+      background: #f1f5f9;
+    }
+
+    /* Center a non-100%-width div */
+    .centered {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    /* Grid layout */
     .grid-container {
       display: grid;
-      grid-template-columns: 33% 33% 33%;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
     }
-    </style>
 
-<!--How to use flex to align div elements side by side:-->
+    /* Flex layout */
+    .flex-container {
+      display: flex;
+      gap: 12px;
+    }
 
-<style>
-.mycontainer {
-  display: flex;
-}
-.mycontainer > div {
-  width:33%;
-}
-</style>
+    .flex-container>div {
+      flex: 1;
+    }
 
-<!--How to use display: inline-block to align div elements side by side:-->
+    /* Inline-block layout */
+    .inline-block-container>div {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+    }
 
-<style>
-div {
-  width: 30%;
-  display: inline-block;
-}
-</style>
+    /* Float layout */
+    .float-container {
+      overflow: auto;
+    }
 
-<!--How to use float to align div elements side by side:-->
+    .float-container>div {
+      width: 33.33%;
+      float: left;
+    }
+  </style>
+</head>
 
-<style>
-.mycontainer {
-  width:100%;
-  overflow:auto;
-}
-.mycontainer div {
-  width:33%;
-  float:left;
-}
-</style>
+<body>
+  <section>
+    <h2>Grouping content with &lt;div&gt;</h2>
+    <div class="box">
+      <h3>London</h3>
+      <p>London is the capital city of England.</p>
+      <p>London has over 9 million inhabitants.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Center-align a fixed-width div (margin: auto)</h2>
+    <div class="box centered">
+      <p>This div is 300px wide and centered.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Grid: align divs side by side</h2>
+    <div class="grid-container">
+      <div class="box">Grid 1</div>
+      <div class="box">Grid 2</div>
+      <div class="box">Grid 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Flexbox: align divs side by side</h2>
+    <div class="flex-container">
+      <div class="box">Flex 1</div>
+      <div class="box">Flex 2</div>
+      <div class="box">Flex 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Inline-block: align divs side by side</h2>
+    <div class="inline-block-container">
+      <div class="box">Inline 1</div>
+      <div class="box">Inline 2</div>
+      <div class="box">Inline 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Float: align divs side by side</h2>
+    <div class="float-container">
+      <div class="box">Float 1</div>
+      <div class="box">Float 2</div>
+      <div class="box">Float 3</div>
+    </div>
+  </section>
+</body>
+
+</html>

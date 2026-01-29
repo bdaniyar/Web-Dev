@@ -1,30 +1,79 @@
-<!-- What is a correct way to add a background color to an HTML document? -->
-<body style='background-color:pink;'></body>
+<!doctype html>
+<html lang="en">
 
-<!-- Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue". -->
-<p style ="color:blue;">This is a paragraph.</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - Styles</title>
 
-<!-- Use CSS to set the font of the paragraph to "courier". -->
-<p style="font-family:courier;">This is a paragraph.</p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 24px;
+            background: #f8fafc;
+        }
 
-<!-- Use CSS to center align the paragraph. -->
-<p style="text-align:center;">This is a paragraph.</p>
+        section {
+            margin: 0 0 16px;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
 
-<!-- Use CSS to set the text size to 50 pixels. -->
-<p style="font-size:50px;">This is a paragraph.</p>
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
 
-<!-- Use CSS to set the background color of the document to yellow. -->
-<html>
-<body style="background-color:yellow;">
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+        .yellow {
+            background-color: yellow;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1) Background color with inline style</h2>
+        <div style="background-color: pink; padding: 10px;">Background: pink</div>
+    </section>
+
+    <section>
+        <h2>2) Paragraph color: blue</h2>
+        <p style="color: blue;">This is a paragraph.</p>
+    </section>
+
+    <section>
+        <h2>3) Paragraph font: courier</h2>
+        <p style="font-family: Courier, 'Courier New', monospace;">This is a paragraph.</p>
+    </section>
+
+    <section>
+        <h2>4) Center align paragraph</h2>
+        <p style="text-align: center;">This is a paragraph.</p>
+    </section>
+
+    <section>
+        <h2>5) Text size 50px</h2>
+        <p style="font-size: 50px;">This is a paragraph.</p>
+    </section>
+
+    <section class="yellow">
+        <h2>6) Document background = yellow</h2>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+    </section>
+
+    <section class="center">
+        <h2>7) Center align document</h2>
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+    </section>
 </body>
-</html>
 
-<!-- Use CSS to center align the document. -->
-<html>
-<body style ="text-align:center;">
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-</body>
 </html>

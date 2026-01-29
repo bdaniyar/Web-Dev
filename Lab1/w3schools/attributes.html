@@ -1,16 +1,65 @@
-<!-- 1.Which of the following is a correct syntax for using an HTML attribute? -->
-<img src='img_girl.jpg'>
+<!doctype html>
+<html lang="en">
 
-<!-- 2. Add a "tooltip" to the paragraph below with the text "About W3Schools". -->
-<p title="About W3Schools">W3Schools is a web developer's site.</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - HTML Attributes</title>
 
-<!-- 3. Set the size of the image to 250 pixels wide and 400 pixels tall. -->
-<img src="w3schools.jpg" width="250" height="400">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 24px;
+            background: #f8fafc;
+        }
 
-<!-- 4. Make the element below into a link that goes to "https://www.w3schools.com". -->
-<a href= "https://www.w3schools.com">This is a link</a>
+        section {
+            margin: 0 0 16px;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
 
-<!-- 5.Specify an alternate text for the image.
-Alternate text is useful when the image cannot be displayed, 
-like when the page is read by a screen reader. -->
-<img src="w3schools.png" alt="w3schools Logo">
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>1) Correct attribute syntax</h2>
+        <img src="img_girl.jpg" alt="Girl" />
+    </section>
+
+    <section>
+        <h2>2) Tooltip using <code>title</code></h2>
+        <p title="About W3Schools">W3Schools is a web developer's site.</p>
+    </section>
+
+    <section>
+        <h2>3) Image size (250x400)</h2>
+        <img src="w3schools.jpg" alt="W3Schools" width="250" height="400" />
+    </section>
+
+    <section>
+        <h2>4) Link using <code>href</code></h2>
+        <a href="https://www.w3schools.com">This is a link</a>
+    </section>
+
+    <section>
+        <h2>5) Alternate text using <code>alt</code></h2>
+        <img src="w3schools.png" alt="W3Schools logo" />
+    </section>
+</body>
+
+</html>

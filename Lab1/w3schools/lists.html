@@ -1,26 +1,71 @@
-<!--An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>W3Schools - Lists</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      padding: 24px;
+      background: #f8fafc;
+    }
+
+    section {
+      margin: 0 0 16px;
+      padding: 16px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .hint {
+      color: #475569;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h2>Unordered list (&lt;ul&gt;)</h2>
     <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+    <p class="hint">list-style-type: disc | circle | square | none</p>
+  </section>
 
-<ul style="list-style-type:disc;"></ul> <!--Here we can write disc, circle, square or none-->
-
-<!--An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.-->
+  <section>
+    <h2>Ordered list (&lt;ol&gt;)</h2>
     <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    <p class="hint">type: 1 | A | a | I | i</p>
+  </section>
 
-<ol type="1"></ol> <!--Here we can write 1, A, a, I, i-->
-
-<!--The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:-->
+  <section>
+    <h2>Description list (&lt;dl&gt;)</h2>
     <dl>
-        <dt>Coffee</dt>
-        <dd>- black hot drink</dd>
-        <dt>Milk</dt>
-        <dd>- white cold drink</dd>
-      </dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
 
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+  </section>
+</body>
+
+</html>

@@ -1,27 +1,97 @@
-<!-- Insert the correct property to make the text color violet. -->
-<p style="color: violet">This is a paragraph.</p>
+<!doctype html>
+<html lang="en">
 
-<!-- The Alpha channel of a color controls the color-transparency, 
-but which of the following values will be MOST transparent? -->
-background-color:rgba(255, 0, 0, 0);
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - Colors</title>
 
-<!-- What is the color of the following text:
-Hello(it is green) -->
-color:rgb(0, 255, 0)
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 24px;
+            background: #f8fafc;
+        }
 
-<!-- Insert the correct RGB color values to make the background color completely blue. -->
-<p style="background-color:rgb(0,0, 255)">This is a paragraph.</p>
+        section {
+            margin: 0 0 16px;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
 
-<!-- Insert the a background color where green has the value 100, 
-red has the value 106, and blue has the value 205. -->
-<p style="background-color:rgb(106 ,100, 205)">This is a paragraph.</p>
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
 
-<!-- Insert the correct HEX value to make the text color white. -->
-<p style="color: #ffffff">This is a paragraph.</p>
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
 
-<!-- Insert the HSLA value to make a color with no hue, 100% saturation, 
-50% lightness, and 50% transparency. -->
-<p style="color: hsla(0, 100%, 50%, 0.5)">This is a paragraph.</p>
+        pre {
+            background: #0b1020;
+            color: #e5e7eb;
+            padding: 12px 16px;
+            border-radius: 12px;
+            overflow: auto;
+        }
+    </style>
+</head>
 
-<!-- What does HSL stand for? -->
-Hue, Saturation and Lightness
+<body>
+    <section>
+        <h2>1) Text color: violet</h2>
+        <p style="color: violet;">This is a paragraph.</p>
+    </section>
+
+    <section>
+        <h2>2) Alpha channel: most transparent</h2>
+        <p>
+            Most transparent is <code>rgba(255, 0, 0, 0)</code> (alpha <code>0</code> means fully
+            transparent).
+        </p>
+        <pre><code>background-color: rgba(255, 0, 0, 0);</code></pre>
+    </section>
+
+    <section>
+        <h2>3) What color is rgb(0, 255, 0)?</h2>
+        <p><code>rgb(0, 255, 0)</code> is green.</p>
+        <pre><code>color: rgb(0, 255, 0);</code></pre>
+    </section>
+
+    <section>
+        <h2>4) Background color: blue</h2>
+        <p style="background-color: rgb(0, 0, 255); color: white; padding: 8px;">
+            This is a paragraph.
+        </p>
+    </section>
+
+    <section>
+        <h2>5) Background color: rgb(106, 100, 205)</h2>
+        <p style="background-color: rgb(106, 100, 205); color: white; padding: 8px;">
+            This is a paragraph.
+        </p>
+    </section>
+
+    <section>
+        <h2>6) Text color: white (hex)</h2>
+        <p style="color: #ffffff; background: #111827; padding: 8px;">This is a paragraph.</p>
+    </section>
+
+    <section>
+        <h2>7) HSLA example</h2>
+        <p style="color: hsla(0, 100%, 50%, 0.5);">This is a paragraph.</p>
+    </section>
+
+    <section>
+        <h2>8) What does HSL stand for?</h2>
+        <p><strong>Hue</strong>, <strong>Saturation</strong>, and <strong>Lightness</strong>.</p>
+    </section>
+</body>
+
+</html>

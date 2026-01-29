@@ -1,13 +1,55 @@
-<!--
-    A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
-    A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
--->
-<!--Here are the block-level elements in HTML:-->
-<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+<!doctype html>
+<html lang="en">
 
-<!--
-An inline element does not start on a new line.
-An inline element only takes up as much width as necessary.
--->
-<!--Here are the inline elements in HTML-->
-<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - Block and Inline</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 24px;
+        }
+
+        .note {
+            margin: 0 0 16px;
+            padding: 12px 16px;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        pre {
+            margin: 0;
+            padding: 12px 16px;
+            border-radius: 12px;
+            background: #0b1020;
+            color: #e5e7eb;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="note">
+        <p>
+            A <strong>block-level</strong> element starts on a new line, and browsers automatically add
+            some space (a margin) before and after the element.
+        </p>
+        <p>
+            A block-level element takes up the <strong>full available width</strong> (stretches left to
+            right).
+        </p>
+    </div>
+
+    <div class="note">
+        <p>Here are common block-level elements in HTML:</p>
+        <pre><code>&lt;address&gt; &lt;article&gt; &lt;aside&gt; &lt;blockquote&gt; &lt;canvas&gt; &lt;dd&gt; &lt;div&gt; &lt;dl&gt; &lt;dt&gt; &lt;fieldset&gt;
+&lt;figcaption&gt; &lt;figure&gt; &lt;footer&gt; &lt;form&gt; &lt;h1&gt;-&lt;h6&gt; &lt;header&gt; &lt;hr&gt; &lt;li&gt; &lt;main&gt;
+&lt;nav&gt; &lt;noscript&gt; &lt;ol&gt; &lt;p&gt; &lt;pre&gt; &lt;section&gt; &lt;table&gt; &lt;tfoot&gt; &lt;ul&gt; &lt;video&gt;</code></pre>
+    </div>
+</body>
+
+</html>

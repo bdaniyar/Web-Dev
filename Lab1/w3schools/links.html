@@ -1,20 +1,66 @@
-<!-- What is a correct syntax for an HTML hyperlink? -->
-<a href='/home.htm'>Visit W3Schools.com!</a>
+<!doctype html>
+<html lang="en">
 
-<!-- Use the correct HTML to make the text below into a link to "default.html". -->
-<a href = "default.html">Visit our HTML tutorial.</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>W3Schools - Links</title>
 
-<!-- Use the correct HTML attribute to make the link open in a new window. -->
-<a href="html_images.asp" target="_blank">HTML Images</a>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            padding: 24px;
+            background: #f8fafc;
+        }
 
-<!-- Use the correct HTML to make the image become a link to "default.html". -->
-<a href="default.html">
-<img src ="smiley.gif">
-</a>
+        section {
+            margin: 0 0 16px;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
 
-<!--Add a "tooltip" to the link.
-The "tooltip" should say "Home".-->
-<a href="default.html" title="Home">Back to Home</a>
+        h2 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
 
-<!-- Use CSS to remove the underline from the link. -->
-<a href="html_images.asp" style="text-decoration:none;">HTML Images</a>
+<body>
+    <section>
+        <h2>1) Correct syntax for a hyperlink</h2>
+        <a href="/home.htm">Visit W3Schools.com!</a>
+    </section>
+
+    <section>
+        <h2>2) Link to default.html</h2>
+        <a href="default.html">Visit our HTML tutorial.</a>
+    </section>
+
+    <section>
+        <h2>3) Open link in a new window/tab</h2>
+        <a href="html_images.asp" target="_blank" rel="noopener">HTML Images</a>
+    </section>
+
+    <section>
+        <h2>4) Make an image a link</h2>
+        <a href="default.html">
+            <img src="smiley.gif" alt="Smiley" />
+        </a>
+    </section>
+
+    <section>
+        <h2>5) Add a tooltip to a link</h2>
+        <a href="default.html" title="Home">Back to Home</a>
+    </section>
+
+    <section>
+        <h2>6) Remove underline using CSS</h2>
+        <a href="html_images.asp" style="text-decoration: none;">HTML Images</a>
+    </section>
+</body>
+
+</html>
