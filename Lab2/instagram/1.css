@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body{
+    display:flex;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.leftside{
+    display: flex;
+    width:50%;
+    background-color: #000000;
+    padding-top: 30px;
+    padding-left: 50px;
+    color: white;
+    font-size: 17px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo p{
+    font-size: 28px;
+    line-height: 32px;
+    width: 480px;
+    margin-top: 10px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.logo img{
+    height:100px;
+}
+
+.image1{
+    height:500px;
+    width: 500px;
+}
+
+/* Твои базовые настройки остаются */
+.rightside {
+    width: 50%;
+    background-color: #05141c; /* Твой цвет */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Обертка для всей формы */
+.auth-container {
+    width: 350px;
+    text-align: center;
+}
+
+.login-title {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Твой класс loginpart */
+.loginpart {
+    border: 1px solid #363636; /* Тонкая рамка как в Instagram */
+    padding: 30px 40px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+/* Твои инпуты */
+input {
+    width: 100%;
+    height: 38px;
+    background: #121212;
+    border: 1px solid #363636;
+    border-radius: 3px;
+    padding: 9px 8px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+/* Твоя кнопка входа */
+.login-btn {
+    width: 100%;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 7px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Стили для разделителя ИЛИ */
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #363636;
+}
+.separator span {
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 18px;
+}
+
+/* Твоя кнопка Facebook */
+.loginfacebook {
+    background: none;
+    border: none;
+    color: #385185;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Твоя ссылка на пароль */
+.forgot-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Твой класс createnew в отдельном блоке */
+.account-box {
+    border: 1px solid #363636;
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.createnew {
+    background: none;
+    border: none;
+    color: #0095f6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Футер Meta */
+.footer-meta a {
+    color: #8e8e8e;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    margin-top: 30px;
+}
+input{
+    width: 100%;
+    margin-top: 15px;
+    height: 52px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
