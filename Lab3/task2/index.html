@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ToDo List</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="brand">
+        <h1>ToDo List</h1>
+        <span>✅</span>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="page-title">ToDo List</h2>
+
+      <section class="card">
+        <form id="todo-form" autocomplete="off">
+          <label for="task-input">New task</label>
+          <input id="task-input" type="text" placeholder="New Task" />
+          <button class="btn-primary" type="submit">Add</button>
+        </form>
+
+        <div class="list-wrap">
+          <div id="empty-state" class="empty">
+            No tasks yet. Add your first one 👆
+          </div>
+
+          <ul id="todo-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
