@@ -1,1 +1,9 @@
 /practice2
+
+/node_modules
+# node modules in the lab4
+/lab4/task1/node_modules
+/lab4/task2/node_modules
+
+/node_modules
+
