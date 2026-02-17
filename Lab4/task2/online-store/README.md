@@ -8,20 +8,20 @@ The application displays a list of real products from **kaspi.kz**, allows navig
 
 ## Features
 
-- Product catalog with **10+ real products** from kaspi.kz  
-- Separate **Product Card component** for reusable UI  
+- Product catalog with **10+ real products** from kaspi.kz
+- Separate **Product Card component** for reusable UI
 - Display of:
-  - product image  
-  - name  
-  - description  
-  - price in KZT  
-  - rating  
+  - product image
+  - name
+  - description
+  - price in KZT
+  - rating
 - **Share buttons**:
-  - WhatsApp  
-  - Telegram  
-- **Responsive layout** using CSS Grid (desktop / tablet / mobile)  
-- **Angular routing** with `/products` page and redirect from `/`  
-- Clean component-scoped CSS styling  
+  - WhatsApp
+  - Telegram
+- **Responsive layout** using CSS Grid (desktop / tablet / mobile)
+- **Angular routing** with `/products` page and redirect from `/`
+- Clean component-scoped CSS styling
 - Strong typing with **TypeScript interfaces**
 
 ---
@@ -42,3 +42,22 @@ Clone the repository and install dependencies:
 
 ```bash
 npm install
+```
+
+---
+
+## Running the Project
+
+Start the development server:
+
+```bash
+ng serve
+```
+
+After the server starts, open your browser and go to:
+
+- http://localhost:4200/
+
+You will be automatically redirected to:
+
+- `/products`
