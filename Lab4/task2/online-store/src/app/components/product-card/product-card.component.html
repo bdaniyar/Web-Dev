@@ -1,0 +1,30 @@
+<article class="card">
+  <div class="image-wrapper">
+    <img class="image" [src]="product.image" [alt]="product.name" />
+  </div>
+
+  <h3 class="name">{{ product.name }}</h3>
+
+  <p class="description">{{ product.description }}</p>
+
+  <div class="meta">
+    <span class="price">{{ product.price | number }} ₸</span>
+    <span class="rating">⭐ {{ product.rating }}</span>
+  </div>
+
+  <a
+    class="link"
+    *ngIf="product.link"
+    [href]="product.link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Open product page
+  </a>
+
+  <!-- Share buttons -->
+  <div class="share">
+    <button (click)="shareWhatsApp()">WhatsApp</button>
+    <button (click)="shareTelegram()">Telegram</button>
+  </div>
+</article>
