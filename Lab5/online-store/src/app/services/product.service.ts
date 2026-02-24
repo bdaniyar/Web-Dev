@@ -268,7 +268,6 @@ export class ProductService {
   }
 
   getProductsByCategory(categoryId: number): Product[] {
-    // Возвращаем КОПИЮ, чтобы удаление работало локально в UI
     return this.products.filter(p => p.categoryId === categoryId).map(p => ({ ...p }));
   }
 }
