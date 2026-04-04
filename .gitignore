@@ -16,5 +16,9 @@
 Lab8/shop-backend/shop_back/venv/
 
 /week10/
+/week11/
 
 *venv
+
+/defence
+.DS_Store
